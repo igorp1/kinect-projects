@@ -1,0 +1,22 @@
+﻿<Window x:Class="Hand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hand show" Height="335" Width="910" Unloaded="Window_Unloaded" Background="White" ResizeMode="CanMinimize">
+
+    <Canvas x:Name="CanvasBig">
+
+        <Canvas x:Name="CanvasBody" Height="300" Width="600" Canvas.Left="0" Canvas.Top="0">
+            <Image x:Name="BodyIM" Height="300" Width="600" Canvas.Top="0" Canvas.Left="0"/>
+            <Rectangle x:Name="HandArea" Fill="CadetBlue" Height="80" Width="80" Canvas.Left="0" Stroke="Navy" Canvas.Top="0"  StrokeThickness="5" Opacity="0.5"/>
+        </Canvas>
+
+        <Canvas x:Name="CanvasHand" Height="300" Width="300" Canvas.Left="600" Canvas.Top="00">
+            <Image x:Name="HandIM" Height="300" Width="300" Canvas.Right="0" Canvas.Bottom="0" Canvas.Left="0" Canvas.Top="0"/>
+            <TextBlock x:Name="PositionTX" Height="20" Canvas.Left="25" TextWrapping="Wrap" Text="Waiting... " Canvas.Top="280" Width="250" Background="Black" Foreground="White" FontWeight="Bold" />
+        </Canvas>
+
+    </Canvas>
+
+
+
+</Window>
